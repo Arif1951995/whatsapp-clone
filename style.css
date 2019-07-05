@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+}
+ul {
+    width: 50%;
+}
+@media (max-width: 600px) {
+    ul {
+        width: 70%;
+    }
+}
+@media (max-width: 500px) {
+    ul {
+        width: 100%;
+    }
+}
+li {
+    list-style: none;
+    width: 80%;
+    border: 1px solid black;
+    height: 120px;
+    display: flex;
+    justify-content: left;
+    border-radius: 10%;
+    border-collapse: collapse;
+
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center > .heading * {
+    margin: 0;
+}
+.right {
+    margin: 10px;
+    margin-left: auto;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: end;
+    display: none;
+}
+
+#unread-div  {
+    display: block;
+}
+#unread-li {
+    background-color: #e9967a;
+}
+
+img {
+    width: 50px;
+    border-radius: 100%;
+    margin: 10px;
+}
+li:nth-child(odd) {
+    background-color: #c3f8e6;
+}
+li:nth-child(even) {
+    background-color: #7fffd4;
+}
